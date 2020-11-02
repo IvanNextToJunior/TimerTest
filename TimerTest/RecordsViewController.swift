@@ -10,12 +10,12 @@ import UIKit
 
 class Record {
     
-    var isPlaying = false
+    
     var duration: TimeInterval = 100
     lazy var currentSeconds = duration
     
     func reset() {
-        isPlaying = false
+         
         currentSeconds = duration
     }
     
@@ -73,7 +73,7 @@ class RecordsViewController: UIViewController {
     /// Resume or start record
     func startRecord(with index: Int) {
         let record = records[index]
-        record.isPlaying = true
+        
         playingRecord = record
 
         startTimer()
@@ -87,17 +87,13 @@ class RecordsViewController: UIViewController {
         record.reset()
         
         cell.seconds = record.duration
-        cell.isPlaying = false
+        cell.playButton.isSelected = false
         
         stopTimer()
     }
     
     func pausePlayingNowRecord() {
-        guard let record = playingRecord else {
-            return
-        }
-        
-        record.isPlaying = false
+      
         
         stopTimer()
     }
@@ -150,7 +146,7 @@ extension RecordsViewController : UITableViewDataSource {
         
         let record = records[indexPath.row]
         cell.seconds = record.currentSeconds
-        cell.isPlaying = record.isPlaying
+         
         
         return cell
     }

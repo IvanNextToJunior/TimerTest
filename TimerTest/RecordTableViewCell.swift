@@ -33,11 +33,7 @@ class RecordTableViewCell: UITableViewCell {
     
     var recordIndex: Int!
     
-    var isPlaying: Bool = false {
-        didSet {
-            togglePlayButtonTitle(playing: isPlaying)
-        }
-    }
+     
     
     var seconds: TimeInterval = 0 {
         didSet {
@@ -50,18 +46,10 @@ class RecordTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setup()
+      
     }
     
-    private func setup() {
-        togglePlayButtonTitle(playing: false)
-    }
-    
-    // MARK: UI Update
-    
-    private func togglePlayButtonTitle(playing: Bool) {
-        playButton.setTitle(playing ? playingTitle : stoppedTitle, for: .normal)
-    }
+     
     
     func updateTimeLabelText() {
         DispatchQueue.main.async {
@@ -72,9 +60,9 @@ class RecordTableViewCell: UITableViewCell {
     // MARK: UI Events
     
     @IBAction func playButtonTouchUpInside(_ sender: UIButton) {
-        isPlaying = !isPlaying
+        sender.isSelected.toggle()
         
-        if isPlaying {
+        if sender.isSelected {
             delegate?.recordTableViewCellShouldStartPlaying(self)
         } else {
             delegate?.recordTableViewCellShouldPausePlaying(self)
