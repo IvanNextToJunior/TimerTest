@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0804F325501B5000651A63 /* RecordDurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0804F225501B5000651A63 /* RecordDurationFormatter.swift */; };
 		CEA1B1A0242A6442004AD2E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1B19F242A6442004AD2E8 /* AppDelegate.swift */; };
 		CEA1B1A2242A6442004AD2E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1B1A1242A6442004AD2E8 /* SceneDelegate.swift */; };
 		CEA1B1A7242A6442004AD2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1B1A5242A6442004AD2E8 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0804F225501B5000651A63 /* RecordDurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDurationFormatter.swift; sourceTree = "<group>"; };
 		CEA1B19C242A6442004AD2E8 /* TimerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA1B19F242A6442004AD2E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA1B1A1242A6442004AD2E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				CEA1B1AA242A6443004AD2E8 /* LaunchScreen.storyboard */,
 				CEA1B1AD242A6443004AD2E8 /* Info.plist */,
 				CEF1E3B3242F407B008041A8 /* RepeatingTimer.swift */,
+				2C0804F225501B5000651A63 /* RecordDurationFormatter.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				CEBF6375242DDB1F00C523C0 /* RecordTableViewCell.swift in Sources */,
 				CEA1B1A0242A6442004AD2E8 /* AppDelegate.swift in Sources */,
 				CEBF6377242DDB9000C523C0 /* RecordsViewController.swift in Sources */,
+				2C0804F325501B5000651A63 /* RecordDurationFormatter.swift in Sources */,
 				CEA1B1A2242A6442004AD2E8 /* SceneDelegate.swift in Sources */,
 				CEF1E3B4242F407B008041A8 /* RepeatingTimer.swift in Sources */,
 			);
