@@ -46,7 +46,8 @@ class RecordTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-      
+        playButton.setTitle(stoppedTitle, for: .normal)
+        playButton.setTitle(playingTitle, for: .selected)
     }
     
      
