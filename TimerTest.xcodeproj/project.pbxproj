@@ -43,6 +43,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0804F125501AC600651A63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA1B19F242A6442004AD2E8 /* AppDelegate.swift */,
+				CEA1B1A1242A6442004AD2E8 /* SceneDelegate.swift */,
+				CEA1B1A5242A6442004AD2E8 /* Main.storyboard */,
+				CEA1B1A8242A6443004AD2E8 /* Assets.xcassets */,
+				CEA1B1AA242A6443004AD2E8 /* LaunchScreen.storyboard */,
+				CEA1B1AD242A6443004AD2E8 /* Info.plist */,
+				CEF1E3B3242F407B008041A8 /* RepeatingTimer.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		CEA1B193242A6442004AD2E8 = {
 			isa = PBXGroup;
 			children = (
@@ -64,14 +78,8 @@
 			children = (
 				CEBF6376242DDB9000C523C0 /* RecordsViewController.swift */,
 				CEBF6374242DDB1F00C523C0 /* RecordTableViewCell.swift */,
-				CEA1B19F242A6442004AD2E8 /* AppDelegate.swift */,
-				CEA1B1A1242A6442004AD2E8 /* SceneDelegate.swift */,
-				CEA1B1A5242A6442004AD2E8 /* Main.storyboard */,
-				CEA1B1A8242A6443004AD2E8 /* Assets.xcassets */,
-				CEA1B1AA242A6443004AD2E8 /* LaunchScreen.storyboard */,
-				CEA1B1AD242A6443004AD2E8 /* Info.plist */,
 				CEBF6371242DB3AE00C523C0 /* RecordTableViewCell.xib */,
-				CEF1E3B3242F407B008041A8 /* RepeatingTimer.swift */,
+				2C0804F125501AC600651A63 /* Support Files */,
 			);
 			path = TimerTest;
 			sourceTree = "<group>";
