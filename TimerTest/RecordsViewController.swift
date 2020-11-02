@@ -154,11 +154,15 @@ extension RecordsViewController : UITableViewDataSource {
 }
 
 extension RecordsViewController : RecordTableViewCellDelegate {
+    func recordTableViewCellShouldStop(_ cell: RecordTableViewCell) {
+        stopPlayingNowRecord()
+    }
+    
     
     func recordTableViewCellShouldStartPlaying(_ cell: RecordTableViewCell) {
-        if cell !== playingCell {
+        if cell !== playingCell || cell.timeLabel.text == "00:00", let delegate = cell.delegate {
             // stop previous record if any
-            stopPlayingNowRecord()
+            delegate.recordTableViewCellShouldStop(cell)
         }
         
         startRecord(with: cell.recordIndex)

@@ -15,6 +15,8 @@ protocol RecordTableViewCellDelegate : class {
     
     func recordTableViewCellShouldStartPlaying(_ cell: RecordTableViewCell)
     func recordTableViewCellShouldPausePlaying(_ cell: RecordTableViewCell)
+    func recordTableViewCellShouldStop(_ cell: RecordTableViewCell) 
+    
     
 }
 
