@@ -43,13 +43,13 @@ class RecordsViewController: UIViewController {
     
     private var playingRecord: Record?
     
-    // TODO: maybe optimize because is gets called by timer via playingCell every second
-    private var playingRecordIndex: Int? {
+    
+    private func setPlayingRecordIndex () -> Int? {
         records.firstIndex { $0 === playingRecord }
     }
     
     private var playingCell: RecordTableViewCell? {
-        guard let index = playingRecordIndex else {
+        guard let index = setPlayingRecordIndex() else {
             return nil
         }
         
