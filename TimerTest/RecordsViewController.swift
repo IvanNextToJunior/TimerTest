@@ -43,11 +43,6 @@ class RecordsViewController: UIViewController {
     
     private var playingRecord: Record?
     
-    
-    private func setPlayingRecordIndex () -> Int? {
-        records.firstIndex { $0 === playingRecord }
-    }
-    
     private var playingCell: RecordTableViewCell? {
         guard let index = setPlayingRecordIndex() else {
             return nil
@@ -130,7 +125,10 @@ class RecordsViewController: UIViewController {
     private func stopTimer() {
         timer.suspend()
     }
-    
+   
+    private func setPlayingRecordIndex () -> Int? {
+        records.firstIndex { $0 === playingRecord }
+    }
 }
 
 extension RecordsViewController : UITableViewDataSource {
