@@ -9,8 +9,7 @@
 import UIKit
 
 class Record {
-    
-    
+
     var duration: TimeInterval = 100
     lazy var currentSeconds = duration
     
@@ -88,8 +87,6 @@ class RecordsViewController: UIViewController {
     }
     
     func pausePlayingNowRecord() {
-      
-        
         stopTimer()
     }
     
