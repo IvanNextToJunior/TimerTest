@@ -66,9 +66,8 @@ class RecordsViewController: UIViewController {
     /// Resume or start record
     func startRecord(with index: Int) {
         let record = records[index]
-        
+      
         playingRecord = record
-        
         startTimer()
     }
     
@@ -148,10 +147,10 @@ extension RecordsViewController : UITableViewDataSource {
 }
 
 extension RecordsViewController : RecordTableViewCellDelegate {
+    
     func recordTableViewCellShouldStop(_ cell: RecordTableViewCell) {
         stopPlayingNowRecord()
     }
-    
     
     func recordTableViewCellShouldStartPlaying(_ cell: RecordTableViewCell) {
         if cell !== playingCell || cell.timeLabel.text == "00:00", let delegate = cell.delegate {
