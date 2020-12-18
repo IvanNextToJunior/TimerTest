@@ -35,8 +35,6 @@ class RecordTableViewCell: UITableViewCell {
     
     var recordIndex: Int!
     
-     
-    
     var seconds: TimeInterval = 0 {
         didSet {
             updateTimeLabelText()
