@@ -42,15 +42,12 @@ class RecordTableViewCell: UITableViewCell {
     }
     
     weak var delegate: RecordTableViewCellDelegate?
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         playButton.setTitle(stoppedTitle, for: .normal)
         playButton.setTitle(playingTitle, for: .selected)
     }
-    
-     
     
     func updateTimeLabelText() {
         DispatchQueue.main.async {
